@@ -50,3 +50,14 @@ test('Epazz', async ({ page }) => {
    await page.fill('#fullname', 'Epazz tester2');
    await page.waitForTimeout(5000);
 });
+  test.only('Facebook', async ({ page }) => {
+  await page.goto('https://www.facebook.com/', {
+    waitUntil: 'domcontentloaded',
+    timeout: 60000
+  });
+  await page.fill('#_R_64mkqsr9pb6amH1_', 'm.rohail@epazz.com');
+  await page.fill('#_R_66mkqsr9pb6amH1_', 'password123');
+  page.getByRole('button', { name: 'Log in' })
+  console.log('Login attempted, waiting for response...');    
+
+});
