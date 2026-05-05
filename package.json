@@ -1,0 +1,30 @@
+{
+  "name": "playwright-pom-framework",
+  "version": "2.0.0",
+  "description": "Scalable Playwright test automation framework using Page Object Model pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen",
+    "test:trace": "playwright show-trace"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "page-object-model",
+    "automation",
+    "e2e",
+    "qa"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
